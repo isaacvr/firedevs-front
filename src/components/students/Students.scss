@@ -1,0 +1,107 @@
+.buttons {
+  padding: 1rem;
+  width: calc(100% - 7rem);
+  
+  button {
+    background-color: #45cb83;
+  }
+}
+
+.student-form {
+  padding: 2rem;
+  width: calc(100% - 9rem);
+}
+
+button.warning {
+  background-color: #f97d83;
+}
+
+button.info {
+  background-color: #92a5ef;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  margin: 3rem auto;
+  position: relative;
+  font-size: 1rem;
+  padding: 0;
+  border-radius: .3rem;
+  border: 2px solid green;
+  outline: none;
+  transition: all 200ms;
+
+  &:focus-within {
+    box-shadow: 0px 2px 8px rgba(2, 74, 9, 0.4);
+  }
+
+  label {
+    margin-bottom: .3rem;
+    position: absolute;
+    top: -1.4rem;
+  }
+
+  input {
+    outline: none;
+    padding: .4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: .4rem;
+  }
+
+  select {
+    height: 2rem;
+    background: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  button {
+    transition: all 200ms;
+    
+    &:hover {
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media only screen and (max-width: 60rem) {
+  .student-component table {
+    td:nth-child(5), th:nth-child(5) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 50rem) {
+  .student-component table {
+    td:nth-child(6), th:nth-child(6) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 36rem) {
+  .student-component table {
+    td:nth-child(4), th:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 27rem) {
+  .student-component table {
+    td:nth-child(2), th:nth-child(2), td:nth-child(3), th:nth-child(3) {
+      display: none;
+    }
+  }
+}

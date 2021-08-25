@@ -1,0 +1,41 @@
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  box-shadow: 0px 2px 8px rgba(2, 74, 9, 0.4);
+  background-color: white;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .nav-item { 
+    padding: .6rem;
+    color: green;
+    background-image: linear-gradient(to right, green, green);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: background-size 400ms;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background-size: 50% 2px;
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
